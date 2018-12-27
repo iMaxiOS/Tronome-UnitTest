@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		276B37D698F7AE5131E990F9 /* Pods_Raytronome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4C5355F6283FE8FB69C3C2 /* Pods_Raytronome.framework */; };
+		57ECE79C21D37D5200D9831B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE79B21D37D5200D9831B /* AppDelegate.swift */; };
+		57ECE7A121D37D5200D9831B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ECE79F21D37D5200D9831B /* Main.storyboard */; };
+		57ECE7A621D37D5300D9831B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ECE7A421D37D5300D9831B /* LaunchScreen.storyboard */; };
+		57ECE7B121D37D5300D9831B /* RaytronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7B021D37D5300D9831B /* RaytronomeTests.swift */; };
+		57ECE7BC21D37D5300D9831B /* RaytronomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7BB21D37D5300D9831B /* RaytronomeUITests.swift */; };
+		57ECE7D021D3824F00D9831B /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7CF21D3824F00D9831B /* SimplePlayer.swift */; };
+		57ECE7D221D3829A00D9831B /* Meter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7D121D3829A00D9831B /* Meter.swift */; };
+		57ECE7D421D383E700D9831B /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7D321D383E700D9831B /* Beat.swift */; };
+		57ECE7D621D384C100D9831B /* BeatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7D521D384C100D9831B /* BeatType.swift */; };
+		57ECE7D821D388B900D9831B /* UIStepper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7D721D388B900D9831B /* UIStepper+Rx.swift */; };
+		57ECE7DA21D388D100D9831B /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7D921D388D100D9831B /* UIView+Rx.swift */; };
+		57ECE7DC21D388EC00D9831B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7DB21D388EC00D9831B /* UIView+Ext.swift */; };
+		57ECE7DE21D3890D00D9831B /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7DD21D3890D00D9831B /* UIApplication+Ext.swift */; };
+		57ECE7E421D3898500D9831B /* Metronome.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57ECE7E221D3898500D9831B /* Metronome.xcassets */; };
+		57ECE7E521D3898500D9831B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57ECE7E321D3898500D9831B /* Assets.xcassets */; };
+		57ECE7E821D3899600D9831B /* accent.wav in Resources */ = {isa = PBXBuildFile; fileRef = 57ECE7E621D3899600D9831B /* accent.wav */; };
+		57ECE7E921D3899600D9831B /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 57ECE7E721D3899600D9831B /* click.wav */; };
+		57ECE7EB21D389E000D9831B /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7EA21D389E000D9831B /* MetronomeViewController.swift */; };
+		57ECE7ED21D38A3700D9831B /* MetronomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ECE7EC21D38A3700D9831B /* MetronomeViewModel.swift */; };
+		93EA63B10D722166FB2E2237 /* Pods_RaytronomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220CE2B50224B9F79708E5DB /* Pods_RaytronomeUITests.framework */; };
+		EBFD1B72B860ADE429AC9958 /* Pods_RaytronomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2452EF5BFAA6D44F21720C /* Pods_RaytronomeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57ECE7AD21D37D5300D9831B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57ECE79021D37D5200D9831B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57ECE79721D37D5200D9831B;
+			remoteInfo = Raytronome;
+		};
+		57ECE7B821D37D5300D9831B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57ECE79021D37D5200D9831B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57ECE79721D37D5200D9831B;
+			remoteInfo = Raytronome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220CE2B50224B9F79708E5DB /* Pods_RaytronomeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaytronomeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2452EF5BFAA6D44F21720C /* Pods_RaytronomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaytronomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ECE79821D37D5200D9831B /* Raytronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raytronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ECE79B21D37D5200D9831B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57ECE7A021D37D5200D9831B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57ECE7A521D37D5300D9831B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57ECE7A721D37D5300D9831B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57ECE7AC21D37D5300D9831B /* RaytronomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaytronomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ECE7B021D37D5300D9831B /* RaytronomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaytronomeTests.swift; sourceTree = "<group>"; };
+		57ECE7B221D37D5300D9831B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57ECE7B721D37D5300D9831B /* RaytronomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaytronomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ECE7BB21D37D5300D9831B /* RaytronomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaytronomeUITests.swift; sourceTree = "<group>"; };
+		57ECE7BD21D37D5300D9831B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57ECE7CF21D3824F00D9831B /* SimplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
+		57ECE7D121D3829A00D9831B /* Meter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meter.swift; sourceTree = "<group>"; };
+		57ECE7D321D383E700D9831B /* Beat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat.swift; sourceTree = "<group>"; };
+		57ECE7D521D384C100D9831B /* BeatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatType.swift; sourceTree = "<group>"; };
+		57ECE7D721D388B900D9831B /* UIStepper+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStepper+Rx.swift"; sourceTree = "<group>"; };
+		57ECE7D921D388D100D9831B /* UIView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
+		57ECE7DB21D388EC00D9831B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		57ECE7DD21D3890D00D9831B /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		57ECE7E221D3898500D9831B /* Metronome.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Metronome.xcassets; sourceTree = "<group>"; };
+		57ECE7E321D3898500D9831B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57ECE7E621D3899600D9831B /* accent.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = accent.wav; sourceTree = "<group>"; };
+		57ECE7E721D3899600D9831B /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		57ECE7EA21D389E000D9831B /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+		57ECE7EC21D38A3700D9831B /* MetronomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewModel.swift; sourceTree = "<group>"; };
+		5C4C5355F6283FE8FB69C3C2 /* Pods_Raytronome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raytronome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC73F1881A60E195EDBC3D0 /* Pods-Raytronome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raytronome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Raytronome/Pods-Raytronome.release.xcconfig"; sourceTree = "<group>"; };
+		8931F2781A42CF8AEF5D4048 /* Pods-Raytronome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raytronome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Raytronome/Pods-Raytronome.debug.xcconfig"; sourceTree = "<group>"; };
+		9F86CD856341FD03036E055D /* Pods-RaytronomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaytronomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaytronomeUITests/Pods-RaytronomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D41CC058FC6A38E5E7ED8EE2 /* Pods-RaytronomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaytronomeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaytronomeTests/Pods-RaytronomeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E52057EB6D436953CD0C3095 /* Pods-RaytronomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaytronomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaytronomeTests/Pods-RaytronomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF0E3B8963C043BE71E92844 /* Pods-RaytronomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaytronomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaytronomeUITests/Pods-RaytronomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57ECE79521D37D5200D9831B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276B37D698F7AE5131E990F9 /* Pods_Raytronome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ECE7A921D37D5300D9831B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFD1B72B860ADE429AC9958 /* Pods_RaytronomeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ECE7B421D37D5300D9831B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EA63B10D722166FB2E2237 /* Pods_RaytronomeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EFBD041345D6C9DAF675E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C4C5355F6283FE8FB69C3C2 /* Pods_Raytronome.framework */,
+				2A2452EF5BFAA6D44F21720C /* Pods_RaytronomeTests.framework */,
+				220CE2B50224B9F79708E5DB /* Pods_RaytronomeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57ECE78F21D37D5200D9831B = {
+			isa = PBXGroup;
+			children = (
+				57ECE79A21D37D5200D9831B /* Raytronome */,
+				57ECE7AF21D37D5300D9831B /* RaytronomeTests */,
+				57ECE7BA21D37D5300D9831B /* RaytronomeUITests */,
+				57ECE79921D37D5200D9831B /* Products */,
+				6567E70C1EA63A20D1BDF9CC /* Pods */,
+				0EFBD041345D6C9DAF675E2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57ECE79921D37D5200D9831B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE79821D37D5200D9831B /* Raytronome.app */,
+				57ECE7AC21D37D5300D9831B /* RaytronomeTests.xctest */,
+				57ECE7B721D37D5300D9831B /* RaytronomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57ECE79A21D37D5200D9831B /* Raytronome */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7CD21D381E600D9831B /* Extensions */,
+				57ECE7CC21D381DB00D9831B /* Models */,
+				57ECE7CB21D37E6400D9831B /* Classes */,
+				57ECE7CE21D381F200D9831B /* Resources */,
+				57ECE79B21D37D5200D9831B /* AppDelegate.swift */,
+				57ECE79F21D37D5200D9831B /* Main.storyboard */,
+				57ECE7A421D37D5300D9831B /* LaunchScreen.storyboard */,
+				57ECE7A721D37D5300D9831B /* Info.plist */,
+				57ECE7EA21D389E000D9831B /* MetronomeViewController.swift */,
+				57ECE7EC21D38A3700D9831B /* MetronomeViewModel.swift */,
+			);
+			path = Raytronome;
+			sourceTree = "<group>";
+		};
+		57ECE7AF21D37D5300D9831B /* RaytronomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7B021D37D5300D9831B /* RaytronomeTests.swift */,
+				57ECE7B221D37D5300D9831B /* Info.plist */,
+			);
+			path = RaytronomeTests;
+			sourceTree = "<group>";
+		};
+		57ECE7BA21D37D5300D9831B /* RaytronomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7BB21D37D5300D9831B /* RaytronomeUITests.swift */,
+				57ECE7BD21D37D5300D9831B /* Info.plist */,
+			);
+			path = RaytronomeUITests;
+			sourceTree = "<group>";
+		};
+		57ECE7CB21D37E6400D9831B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7CF21D3824F00D9831B /* SimplePlayer.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		57ECE7CC21D381DB00D9831B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7D121D3829A00D9831B /* Meter.swift */,
+				57ECE7D321D383E700D9831B /* Beat.swift */,
+				57ECE7D521D384C100D9831B /* BeatType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		57ECE7CD21D381E600D9831B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7D721D388B900D9831B /* UIStepper+Rx.swift */,
+				57ECE7D921D388D100D9831B /* UIView+Rx.swift */,
+				57ECE7DB21D388EC00D9831B /* UIView+Ext.swift */,
+				57ECE7DD21D3890D00D9831B /* UIApplication+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57ECE7CE21D381F200D9831B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7E021D3894200D9831B /* Audio */,
+				57ECE7DF21D3893900D9831B /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57ECE7DF21D3893900D9831B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7E321D3898500D9831B /* Assets.xcassets */,
+				57ECE7E221D3898500D9831B /* Metronome.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		57ECE7E021D3894200D9831B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				57ECE7E621D3899600D9831B /* accent.wav */,
+				57ECE7E721D3899600D9831B /* click.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		6567E70C1EA63A20D1BDF9CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8931F2781A42CF8AEF5D4048 /* Pods-Raytronome.debug.xcconfig */,
+				6AC73F1881A60E195EDBC3D0 /* Pods-Raytronome.release.xcconfig */,
+				D41CC058FC6A38E5E7ED8EE2 /* Pods-RaytronomeTests.debug.xcconfig */,
+				E52057EB6D436953CD0C3095 /* Pods-RaytronomeTests.release.xcconfig */,
+				9F86CD856341FD03036E055D /* Pods-RaytronomeUITests.debug.xcconfig */,
+				EF0E3B8963C043BE71E92844 /* Pods-RaytronomeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57ECE79721D37D5200D9831B /* Raytronome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57ECE7C021D37D5300D9831B /* Build configuration list for PBXNativeTarget "Raytronome" */;
+			buildPhases = (
+				DC71169FA245EC5DBAF45E8B /* [CP] Check Pods Manifest.lock */,
+				57ECE79421D37D5200D9831B /* Sources */,
+				57ECE79521D37D5200D9831B /* Frameworks */,
+				57ECE79621D37D5200D9831B /* Resources */,
+				5D3A86CCD1CE2A3DE0424AF4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Raytronome;
+			productName = Raytronome;
+			productReference = 57ECE79821D37D5200D9831B /* Raytronome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57ECE7AB21D37D5300D9831B /* RaytronomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57ECE7C321D37D5300D9831B /* Build configuration list for PBXNativeTarget "RaytronomeTests" */;
+			buildPhases = (
+				A19E65FC3A513E4BF71AABA0 /* [CP] Check Pods Manifest.lock */,
+				57ECE7A821D37D5300D9831B /* Sources */,
+				57ECE7A921D37D5300D9831B /* Frameworks */,
+				57ECE7AA21D37D5300D9831B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57ECE7AE21D37D5300D9831B /* PBXTargetDependency */,
+			);
+			name = RaytronomeTests;
+			productName = RaytronomeTests;
+			productReference = 57ECE7AC21D37D5300D9831B /* RaytronomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57ECE7B621D37D5300D9831B /* RaytronomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57ECE7C621D37D5300D9831B /* Build configuration list for PBXNativeTarget "RaytronomeUITests" */;
+			buildPhases = (
+				7E69EAA6824A8FCD79BA86CD /* [CP] Check Pods Manifest.lock */,
+				57ECE7B321D37D5300D9831B /* Sources */,
+				57ECE7B421D37D5300D9831B /* Frameworks */,
+				57ECE7B521D37D5300D9831B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57ECE7B921D37D5300D9831B /* PBXTargetDependency */,
+			);
+			name = RaytronomeUITests;
+			productName = RaytronomeUITests;
+			productReference = 57ECE7B721D37D5300D9831B /* RaytronomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57ECE79021D37D5200D9831B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Гранченко Максим";
+				TargetAttributes = {
+					57ECE79721D37D5200D9831B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					57ECE7AB21D37D5300D9831B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 57ECE79721D37D5200D9831B;
+					};
+					57ECE7B621D37D5300D9831B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 57ECE79721D37D5200D9831B;
+					};
+				};
+			};
+			buildConfigurationList = 57ECE79321D37D5200D9831B /* Build configuration list for PBXProject "Raytronome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57ECE78F21D37D5200D9831B;
+			productRefGroup = 57ECE79921D37D5200D9831B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57ECE79721D37D5200D9831B /* Raytronome */,
+				57ECE7AB21D37D5300D9831B /* RaytronomeTests */,
+				57ECE7B621D37D5300D9831B /* RaytronomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57ECE79621D37D5200D9831B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ECE7E421D3898500D9831B /* Metronome.xcassets in Resources */,
+				57ECE7E921D3899600D9831B /* click.wav in Resources */,
+				57ECE7A621D37D5300D9831B /* LaunchScreen.storyboard in Resources */,
+				57ECE7E821D3899600D9831B /* accent.wav in Resources */,
+				57ECE7A121D37D5200D9831B /* Main.storyboard in Resources */,
+				57ECE7E521D3898500D9831B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ECE7AA21D37D5300D9831B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ECE7B521D37D5300D9831B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D3A86CCD1CE2A3DE0424AF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Raytronome/Pods-Raytronome-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Raytronome/Pods-Raytronome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E69EAA6824A8FCD79BA86CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaytronomeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A19E65FC3A513E4BF71AABA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaytronomeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC71169FA245EC5DBAF45E8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Raytronome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57ECE79421D37D5200D9831B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ECE7DA21D388D100D9831B /* UIView+Rx.swift in Sources */,
+				57ECE7DE21D3890D00D9831B /* UIApplication+Ext.swift in Sources */,
+				57ECE7D621D384C100D9831B /* BeatType.swift in Sources */,
+				57ECE79C21D37D5200D9831B /* AppDelegate.swift in Sources */,
+				57ECE7EB21D389E000D9831B /* MetronomeViewController.swift in Sources */,
+				57ECE7D021D3824F00D9831B /* SimplePlayer.swift in Sources */,
+				57ECE7DC21D388EC00D9831B /* UIView+Ext.swift in Sources */,
+				57ECE7D821D388B900D9831B /* UIStepper+Rx.swift in Sources */,
+				57ECE7ED21D38A3700D9831B /* MetronomeViewModel.swift in Sources */,
+				57ECE7D421D383E700D9831B /* Beat.swift in Sources */,
+				57ECE7D221D3829A00D9831B /* Meter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ECE7A821D37D5300D9831B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ECE7B121D37D5300D9831B /* RaytronomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ECE7B321D37D5300D9831B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ECE7BC21D37D5300D9831B /* RaytronomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57ECE7AE21D37D5300D9831B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57ECE79721D37D5200D9831B /* Raytronome */;
+			targetProxy = 57ECE7AD21D37D5300D9831B /* PBXContainerItemProxy */;
+		};
+		57ECE7B921D37D5300D9831B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57ECE79721D37D5200D9831B /* Raytronome */;
+			targetProxy = 57ECE7B821D37D5300D9831B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57ECE79F21D37D5200D9831B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57ECE7A021D37D5200D9831B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57ECE7A421D37D5300D9831B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57ECE7A521D37D5300D9831B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57ECE7BE21D37D5300D9831B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57ECE7BF21D37D5300D9831B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57ECE7C121D37D5300D9831B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8931F2781A42CF8AEF5D4048 /* Pods-Raytronome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4XB56HC9M;
+				INFOPLIST_FILE = Raytronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimCord.Raytronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57ECE7C221D37D5300D9831B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC73F1881A60E195EDBC3D0 /* Pods-Raytronome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4XB56HC9M;
+				INFOPLIST_FILE = Raytronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimCord.Raytronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57ECE7C421D37D5300D9831B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41CC058FC6A38E5E7ED8EE2 /* Pods-RaytronomeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4XB56HC9M;
+				INFOPLIST_FILE = RaytronomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimCord.RaytronomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raytronome.app/Raytronome";
+			};
+			name = Debug;
+		};
+		57ECE7C521D37D5300D9831B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52057EB6D436953CD0C3095 /* Pods-RaytronomeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4XB56HC9M;
+				INFOPLIST_FILE = RaytronomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimCord.RaytronomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raytronome.app/Raytronome";
+			};
+			name = Release;
+		};
+		57ECE7C721D37D5300D9831B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F86CD856341FD03036E055D /* Pods-RaytronomeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4XB56HC9M;
+				INFOPLIST_FILE = RaytronomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimCord.RaytronomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Raytronome;
+			};
+			name = Debug;
+		};
+		57ECE7C821D37D5300D9831B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0E3B8963C043BE71E92844 /* Pods-RaytronomeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4XB56HC9M;
+				INFOPLIST_FILE = RaytronomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimCord.RaytronomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Raytronome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57ECE79321D37D5200D9831B /* Build configuration list for PBXProject "Raytronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ECE7BE21D37D5300D9831B /* Debug */,
+				57ECE7BF21D37D5300D9831B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57ECE7C021D37D5300D9831B /* Build configuration list for PBXNativeTarget "Raytronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ECE7C121D37D5300D9831B /* Debug */,
+				57ECE7C221D37D5300D9831B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57ECE7C321D37D5300D9831B /* Build configuration list for PBXNativeTarget "RaytronomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ECE7C421D37D5300D9831B /* Debug */,
+				57ECE7C521D37D5300D9831B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57ECE7C621D37D5300D9831B /* Build configuration list for PBXNativeTarget "RaytronomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ECE7C721D37D5300D9831B /* Debug */,
+				57ECE7C821D37D5300D9831B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57ECE79021D37D5200D9831B /* Project object */;
+}
