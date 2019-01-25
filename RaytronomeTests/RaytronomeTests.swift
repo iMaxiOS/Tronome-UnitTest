@@ -213,7 +213,86 @@ class RaytronomeTests: XCTestCase {
         ])
     }
 
+    func testBeatBy32() {
+        scheduler = TestScheduler(initialClock: 0, resolution: 0.01)
+        
+        viewModel = MetronomeViewModel(initialMeter: Meter(signature: "4/32"),
+                                       autoplay: true,
+                                       beatScheduler: scheduler)
+        
+        let beat = scheduler.createObserver(Beat.self)
+        viewModel.beat.asObservable()
+            .take(8)
+            .bind(to: beat)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        XCTAssertEqual(beat.events, [
+            .next(6, .first),
+            .next(12, .regular),
+            .next(18, .regular),
+            .next(24, .regular),
+            .next(30, .first),
+            .next(36, .regular),
+            .next(42, .regular),
+            .next(48, .regular),
+            .completed(48)
+            ])
+    }
     
+    func testBeatBy4() {
+        scheduler = TestScheduler(initialClock: 0, resolution: 0.1)
+        
+        viewModel = MetronomeViewModel(initialMeter: Meter(signature: "4/4"),
+                                       autoplay: true,
+                                       beatScheduler: scheduler)
+        
+        let beat = scheduler.createObserver(Beat.self)
+        viewModel.beat.asObservable()
+            .take(8)
+            .bind(to: beat)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        XCTAssertEqual(beat.events, [
+            .next(5, .first),
+            .next(10, .regular),
+            .next(15, .regular),
+            .next(20, .regular),
+            .next(25, .first),
+            .next(30, .regular),
+            .next(35, .regular),
+            .next(40, .regular),
+            .completed(40)
+            ])
+    }
     
-    
+    func testBeatTypeAlternates() {
+        scheduler = TestScheduler(initialClock: 0, resolution: 0.1)
+        
+        viewModel = MetronomeViewModel(initialMeter: Meter(signature: "4/4"), autoplay: true, beatScheduler: scheduler)
+        
+        let beatType = scheduler.createObserver(BeatType.self)
+        
+        viewModel.beatType.asObservable()
+        .take(8)
+        .bind(to: beatType)
+        .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        XCTAssertEqual(beatType.events, [
+            .next(5, .even),
+            .next(10, .odd),
+            .next(15, .even),
+            .next(20, .odd),
+            .next(25, .even),
+            .next(30, .odd),
+            .next(35, .even),
+            .next(40, .odd),
+            .completed(40)
+        ])
+    }
 }
